@@ -12,7 +12,7 @@ export class AppController {
   constructor(
     private readonly appService: AppService,
     private readonly authService: AuthService
-    ) {}
+  ) {}
 
   @Get('hello')
   getData(): Message {
@@ -30,5 +30,4 @@ export class AppController {
   getProfile(@Request() req) {
     return req.user;
   }
-
 }

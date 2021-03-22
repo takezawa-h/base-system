@@ -8,16 +8,16 @@ export class UsersService {
     {
       userId: 1,
       username: 'Takezawa',
-      password: 'p@ssw0rd'
+      password: 'p@ssw0rd',
     },
     {
       userId: 2,
       username: 'Sato',
-      password: '123'
-    }
-  ]
+      password: '123',
+    },
+  ];
 
   async findOne(username: string): Promise<User | undefined> {
-    return this.users.find(u => u.username === username);
+    return this.users.find((u) => u.username === username);
   }
 }

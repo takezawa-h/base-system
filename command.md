@@ -1,7 +1,7 @@
 # 実装履歴
 
+## nx ワークスペースの作成
 
-## nxワークスペースの作成
 ```bash
 % npx create-nx-workspace
 npx: 227個のパッケージを5.825秒でインストールしました。
@@ -14,7 +14,7 @@ npx: 227個のパッケージを5.825秒でインストールしました。
 Creating a sandbox with Nx...
 ```
 
-## Nestjs:jwtを使った認証
+## Nestjs:jwt を使った認証
 
 参考:[Authentication](https://docs.nestjs.com/security/authentication)
 
@@ -47,4 +47,3 @@ $ # GET /profile using access_token returned from previous step as bearer code
 $ curl http://localhost:3333/api/profile -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRha2V6YXdhIiwic3ViIjoxLCJpYXQiOjE2MTY0MjI5MDQsImV4cCI6MTYxNjQyMjk2NH0.WgcVR5mZH8qvDeI7Z4CJBY5atm05Db4vLTLukxVFH5s"
 $ # result -> {"userId":1,"username":"Takezawa"}%
 ```
-
